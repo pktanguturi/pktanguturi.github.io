@@ -1,1 +1,352 @@
-Hello, This is Pradeep Kumar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pradeep Kumar Tanguturi | Automation Engineer</title>
+<link rel="canonical" href="https://pktanguturi.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pktanguturi.github.io/">
+<meta property="og:title" content="Pradeep Kumar Tanguturi | Automation Engineer">
+<meta property="og:description" content="10 years of mission-critical systems, now moving into industrial automation. MSc Connected Industry 4.0 at UC3M, Madrid.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0a0a">
+<script>document.documentElement.classList.add("js");</script>
+<meta name="description" content="Pradeep Kumar Tanguturi: Electrical & Electronics engineer moving into industrial automation. MSc Connected Industry 4.0 at UC3M, Madrid.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0a'/><text x='50' y='76' font-size='78' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle' fill='%23ffb000'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#1d1d1d; --side:#0a0a0a; --txt:#fff; --mut:#8d8d8d; --accent:#ffb000; --teal:#08fdd8; --line:#2b2b2b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--txt); font-family:"Inter Tight",system-ui,sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  a { color:inherit; text-decoration:none; }
+
+  /* SIDEBAR */
+  aside { position:fixed; left:0; top:0; bottom:0; width:120px; background:var(--side); display:flex; flex-direction:column; z-index:10; }
+  .brand { background:#000; padding:22px 0 18px; text-align:center; }
+  .brand .p { font-size:68px; font-weight:900; line-height:.9; letter-spacing:-.05em; background:linear-gradient(90deg, var(--teal) 0 50%, var(--accent) 50% 100%); -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(2px 2px 0 rgba(0,0,0,.6)); }
+  .brand .n { font-weight:800; font-size:18px; margin-top:4px; }
+  .brand .r { font-size:10.5px; color:var(--mut); margin-top:2px; }
+  .menu { margin-top:auto; margin-bottom:auto; display:flex; flex-direction:column; }
+  .menu a { text-align:center; padding:12px 0; color:#909096; font-size:14px; border-top:1px solid #1a1a1a; transition:color .2s; position:relative; }
+  .menu a:last-child { border-bottom:1px solid #1a1a1a; }
+  .menu a:hover, .menu a.active { color:var(--teal); }
+  a:focus-visible { outline:2px solid var(--teal); outline-offset:3px; }
+  .menu a.active::before { content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--teal); }
+  .soc { display:flex; justify-content:center; gap:12px; padding:20px 0 26px; }
+  .soc a { width:16px; height:16px; color:#909096; } .soc a:hover { color:var(--teal); }
+  .soc svg { width:100%; height:100%; }
+
+  main { margin-left:120px; }
+  /* faint PLC-style annotations, like the <html> tags */
+  .note { font-family:"La Belle Aurore",cursive; color:#555; font-size:18px; line-height:1; user-select:none; }
+  .note.i { padding-left:22px; }
+
+  /* HERO */
+  .hero { min-height:100vh; position:relative; display:flex; flex-direction:column; justify-content:center; padding:60px 70px; overflow:hidden; }
+  .hero .top-notes { position:absolute; top:24px; left:36px; }
+  #sky { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+  .hero h1 { font-size:clamp(46px,7vw,96px); font-weight:900; line-height:.98; letter-spacing:-.045em; position:relative; z-index:1; }
+  .hero h1 .p { background:linear-gradient(90deg, var(--teal) 0 50%, var(--accent) 50% 100%); -webkit-background-clip:text; background-clip:text; color:transparent; display:inline-block; }
+  .hero h1 .w { display:inline-block; white-space:nowrap; }
+  .hero h1 .ltr { display:inline-block; transition:color .15s; cursor:default; }
+  .hero h1 .ltr:hover { color:var(--teal); animation:rubber .7s; }
+  .hero h1 .p.ltr:hover { color:transparent; }
+  @keyframes rubber { 0%{transform:scale(1)} 30%{transform:scaleX(1.25) scaleY(.75)} 40%{transform:scaleX(.75) scaleY(1.25)} 60%{transform:scaleX(1.15) scaleY(.85)} 100%{transform:scale(1)} }
+  .hero .sub { color:var(--mut); letter-spacing:.24em; font-size:15px; margin:18px 0 6px; position:relative; z-index:1; }
+  .btn { display:inline-block; border:1px solid var(--teal); color:var(--teal); padding:13px 40px; letter-spacing:.2em; font-size:14px; margin-top:38px; position:relative; z-index:1; transition:background .25s, color .25s; align-self:flex-start; }
+  .btn:hover { background:var(--teal); color:#000; }
+  .scroll { position:absolute; bottom:30px; font-size:11px; color:var(--mut); letter-spacing:.15em; writing-mode:vertical-rl; }
+  .scroll.l { left:14px; } .scroll.r { right:14px; }
+  .ribbon { position:absolute; top:22px; right:22px; font-size:12px; color:var(--mut); border:1px solid var(--line); padding:6px 12px; display:flex; align-items:center; gap:8px; }
+  .ribbon i { width:8px; height:8px; border-radius:50%; background:var(--teal); box-shadow:0 0 10px var(--teal); }
+
+  /* SECTIONS */
+  section { padding:110px 70px; position:relative; }
+  h2 { font-size:clamp(40px,5.5vw,68px); font-weight:900; letter-spacing:-.04em; line-height:1; color:var(--teal); margin:6px 0 34px; }
+  .cols { display:grid; grid-template-columns:1.1fr 1fr; gap:70px; align-items:start; }
+  .text p { color:#c9c9c9; font-size:17px; margin-bottom:16px; max-width:560px; }
+  .text p b { color:#fff; font-weight:600; }
+
+  /* skills: tag sphere-like cloud */
+  .cloud { position:relative; height:420px; }
+  .cloud span { position:absolute; font-weight:700; white-space:nowrap; transition:color .2s, transform .3s; cursor:default; }
+  .cloud span:hover { color:var(--accent) !important; transform:scale(1.15); }
+
+  .bars .row { margin-bottom:20px; }
+  .bars .row div:first-child { display:flex; justify-content:space-between; font-size:14px; color:#c9c9c9; margin-bottom:6px; }
+  .bars .track { height:3px; background:#333; }
+  .bars .track i { display:block; height:100%; background:linear-gradient(90deg,var(--teal),var(--accent)); }
+
+  .jobs { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr)); gap:2px; background:var(--line); border:1px solid var(--line); }
+  .job { background:var(--bg); padding:30px; transition:background .3s; position:relative; }
+  .job:hover { background:#232323; }
+  .job:hover::after { content:""; position:absolute; left:0; bottom:0; height:3px; width:100%; background:linear-gradient(90deg,var(--teal),var(--accent)); }
+  .job .d { font-size:12px; letter-spacing:.14em; color:var(--mut); }
+  .job h3 { font-size:22px; font-weight:800; letter-spacing:-.02em; margin:8px 0 2px; }
+  .job .c { color:var(--accent); font-size:14px; font-weight:600; margin-bottom:12px; }
+  .job p { color:#b3b3b3; font-size:15px; }
+
+  .edu { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .edu div { border-left:3px solid var(--teal); padding:4px 0 4px 22px; }
+  .edu div.o { border-color:#444; }
+  .edu small { color:var(--mut); letter-spacing:.12em; font-size:12px; }
+  .edu h3 { font-size:22px; font-weight:800; margin:4px 0; letter-spacing:-.02em; }
+  .edu p { color:#b3b3b3; }
+  .langs { margin-top:40px; display:flex; gap:40px; flex-wrap:wrap; }
+  .langs div b { display:block; font-size:20px; font-weight:800; } .langs div span { font-size:13px; color:var(--mut); letter-spacing:.1em; }
+
+  .contact .big { overflow-wrap:anywhere; font-size:clamp(28px,4vw,46px); font-weight:800; letter-spacing:-.03em; line-height:1.15; max-width:820px; }
+  .contact .big a { color:var(--teal); border-bottom:2px solid var(--teal); }
+  .contact .big a:hover { color:var(--accent); border-color:var(--accent); }
+  footer { margin-left:120px; padding:30px 70px; color:#8d8d8d; font-size:13px; border-top:1px solid var(--line); }
+
+  .js .reveal { opacity:0; transform:translateY(24px); transition:opacity .7s, transform .7s; }
+  .reveal.in { opacity:1; transform:none; }
+
+  @media (max-width:860px) {
+    aside { position:sticky; width:100%; height:auto; flex-direction:row; flex-wrap:wrap; align-items:center; bottom:auto; }
+    .brand { padding:8px 16px; display:flex; align-items:center; gap:10px; width:100%; } .brand .p { font-size:30px; } .brand .r { display:block; margin:0 0 0 auto; }
+    .menu { flex-direction:row; width:100%; margin:0; justify-content:space-around; border-top:1px solid #1a1a1a; } .menu a { padding:10px 4px; border:none !important; font-size:13px; white-space:nowrap; }
+    .menu a.active::before { top:auto; bottom:0; left:15%; right:15%; width:auto; height:2px; }
+    section, header { scroll-margin-top:96px; }
+    .hero { min-height:calc(100svh - 90px); }
+    .cloud { height:auto !important; display:flex; flex-wrap:wrap; gap:10px 16px; }
+    .cloud span { position:static; visibility:visible !important; font-size:16px !important; }
+    .soc { display:none; }
+    main, footer { margin-left:0; }
+    .hero, section { padding:70px 22px; } footer { padding:24px 22px; }
+    .cols, .edu { grid-template-columns:1fr; gap:30px; }
+    .scroll, .ribbon { display:none; }
+  }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .js .reveal { opacity:1; transform:none; transition:none; } .hero h1 .ltr:hover, .cloud span:hover { animation:none; transform:none; } }
+</style>
+</head>
+<body>
+<aside>
+  <a href="#home" class="brand"><div class="p">P</div><div class="n">Pradeep</div><div class="r">Automation Engineer</div></a>
+  <nav class="menu">
+    <a href="#about">About</a><a href="#skills">My Skills</a><a href="#work">Work</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="soc">
+    <a href="https://linkedin.com/in/ptanguturi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+    <a href="https://github.com/pktanguturi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
+    <a href="mailto:pktanguturi6@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+  </div>
+</aside>
+
+<main>
+  <header class="hero" id="home">
+    <canvas id="sky"></canvas>
+    <div class="top-notes"><div class="note">PROGRAM Main</div><div class="note i">VAR career : Engineer;</div></div>
+    <div class="ribbon"><i></i>Open to internships · Madrid</div>
+    <div class="note">(* start *)</div>
+    <h1 id="headline" aria-label="Hi, I’m Pradeep, automation engineer">Hi,<br>I’m <span class="p">P</span>radeep,<br>automation engineer</h1>
+    <div class="note" style="margin-top:4px">(* end *)</div>
+    <div class="sub">Industry 4.0 / IIoT / Reliability Engineering</div>
+    <a href="#contact" class="btn">Contact me!</a>
+    <span class="scroll l">scroll down ↓</span><span class="scroll r">scroll down ↓</span>
+  </header>
+
+  <section id="about">
+    <div class="note">IF experience &gt;= 10 THEN</div>
+    <div class="cols">
+      <div class="text reveal">
+        <h2>Me, myself<br>&amp; I</h2>
+        <p>I'm an <b>Electrical &amp; Electronics engineer</b> with 10 years of experience building and running <b>mission-critical, high-availability systems</b> for leading financial and healthcare institutions, including JP Morgan Chase, Elevance Health and MetLife.</p>
+        <p>Now I'm pursuing a <b>Master in Connected Industry 4.0 at Universidad Carlos III de Madrid</b> and moving into industrial automation, bringing systems integration, data analytics and reliability engineering to IIoT and smart manufacturing.</p>
+        <p>I'm open to <b>internships and roles in industrial automation in Madrid</b>, and available for a UC3M curricular internship.</p>
+      </div>
+      <div class="bars reveal" style="padding-top:110px">
+        <div class="row"><div><span>Uptime on mission-critical systems</span><span>99.9%</span></div><div class="track"><i style="width:99.9%"></i></div></div>
+        <div class="row"><div><span>Years in industry</span><span>10+</span></div><div class="track"><i style="width:100%"></i></div></div>
+        <div class="row"><div><span>Global companies</span><span>6</span></div><div class="track"><i style="width:60%"></i></div></div>
+        <div class="row"><div><span>Spanish (A2, ramping up)</span><span>A2</span></div><div class="track"><i style="width:35%"></i></div></div>
+      </div>
+    </div>
+    <div class="note">END_IF;</div>
+  </section>
+
+  <section id="skills">
+    <div class="note">FOR skill := 1 TO n DO</div>
+    <div class="cols">
+      <div class="text reveal">
+        <h2>Skills &amp;<br>Experience</h2>
+        <p><b>Automation &amp; control:</b> process and service automation, industrial and service robotics, cyber-physical systems, industrial robot programming.</p>
+        <p><b>Smart manufacturing &amp; IIoT:</b> digital production and design, Industry 4.0 reference architectures, Industrial IoT, M2M, 5G and wireless networks.</p>
+        <p><b>Data &amp; security:</b> industrial data analytics, predictive modeling, pattern analysis in R and Python, cybersecurity of networks and cyber-physical systems.</p>
+        <p><b>Systems &amp; reliability:</b> REST/SOAP, XML, AWS, legacy-to-cloud integration, fault-tolerant design, root-cause analysis, z/OS, COBOL, JCL, CICS, DB2, IMS DB. Tools: Arena, PTC Creo, Git, C, SQL, microcontrollers.</p>
+      </div>
+      <div class="cloud reveal" id="cloud" aria-hidden="true"></div>
+    </div>
+    <div class="note">END_FOR;</div>
+  </section>
+
+  <section id="work">
+    <div class="note">CASE employer OF</div>
+    <h2 class="reveal">Work</h2>
+    <div class="jobs reveal">
+      <div class="job"><div class="d">SEP 2025 – JUL 2026</div><h3>Lead · Mphasis</h3><div class="c">JP Morgan Chase</div><p>Modernized legacy workloads onto Java-based frameworks and ran mission-critical banking systems at 99.9% uptime, with data patterns and predictive models supporting migration.</p></div>
+      <div class="job"><div class="d">MAY 2025 – SEP 2025</div><h3>Lead · HTC Global</h3><div class="c">AMFAM</div><p>Optimized high-throughput batch processes, cutting execution time and resource usage; resolved production bottlenecks through root-cause analysis.</p></div>
+      <div class="job"><div class="d">SEP 2023 – JAN 2025</div><h3>Lead · IBM</h3><div class="c">Elevance Health</div><p>Led migration of hierarchical IMS data and programs to relational DB2; applied pattern analysis and predictive modeling for enterprise analytics.</p></div>
+      <div class="job"><div class="d">AUG 2019 – AUG 2023</div><h3>Senior Software Engineer · Legato Health Technologies</h3><div class="c">Elevance Health</div><p>Kept high-volume claims-processing batch operations within critical SLAs; diagnosed defects and adapted logic to policy changes.</p></div>
+      <div class="job"><div class="d">FEB 2018 – AUG 2019</div><h3>Associate Professional Product Developer · DXC Technology</h3><div class="c">MetLife</div><p>Developed and tested transaction-processing routines (surrenders, claims, payments) for life-insurance systems.</p></div>
+      <div class="job"><div class="d">AUG 2016 – FEB 2018</div><h3>Senior Associate Consultant · NTT DATA GDS</h3><div class="c">National Life Group</div><p>Replaced paper cheque workflows with a digital subsystem; built web-service and XML integrations for real-time policy data on mobile.</p></div>
+    </div>
+    <div class="note" style="margin-top:20px">END_CASE;</div>
+  </section>
+
+  <section id="education">
+    <div class="note">WHILE learning DO</div>
+    <h2 class="reveal">Education</h2>
+    <div class="edu reveal">
+      <div><small>SEP 2026 – 2027 (EXPECTED)</small><h3>Master in Connected Industry 4.0</h3><p>Universidad Carlos III de Madrid (UC3M), Spain</p></div>
+      <div class="o"><small>2010 – 2014</small><h3>B.Tech, Electrical &amp; Electronics Engineering</h3><p>KSRM College of Engineering, JNTUA, India</p></div>
+    </div>
+    <div class="langs reveal">
+      <div><b>English</b><span>FLUENT</span></div><div><b>Telugu</b><span>NATIVE</span></div><div><b>Spanish</b><span>A2 · IN PROGRESS</span></div><div><b>Hindi</b><span>BASIC</span></div>
+    </div>
+    <div class="note" style="margin-top:20px">END_WHILE;</div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="note">contact := TRUE;</div>
+    <h2 class="reveal">Contact me</h2>
+    <p class="big reveal">Looking for an intern or engineer who keeps critical systems running? Write to <a href="mailto:pktanguturi6@gmail.com">pktanguturi6@gmail.com</a> or find me on <a href="https://linkedin.com/in/ptanguturi" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+    <div class="note" style="margin-top:30px">END_PROGRAM</div>
+  </section>
+</main>
+<footer>© <span id="yr">2026</span> Pradeep Kumar Tanguturi · Madrid, Spain</footer>
+
+<script>
+  // split headline into words (kept unbreakable) and letters (hover "rubber band" effect)
+  const h = document.getElementById("headline");
+  [...h.childNodes].forEach(n => {
+    if (n.nodeType === 3) {
+      const frag = document.createDocumentFragment();
+      n.textContent.split(/(\s+)/).forEach(part => {
+        if (!part) return;
+        if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(" ")); return; }
+        const w = document.createElement("span"); w.className = "w"; w.setAttribute("aria-hidden", "true");
+        [...part].forEach(ch => { const s = document.createElement("span"); s.className = "ltr"; s.textContent = ch; w.appendChild(s); });
+        frag.appendChild(w);
+      });
+      n.replaceWith(frag);
+    } else if (n.classList && n.classList.contains("p")) {
+      n.classList.add("ltr"); n.setAttribute("aria-hidden", "true");
+    }
+  });
+  // keep "P" + "radeep," on the same line
+  const pEl = h.querySelector(".p"), rest = pEl.nextElementSibling;
+  const pw = document.createElement("span"); pw.className = "w"; pw.setAttribute("aria-hidden", "true");
+  pEl.before(pw); pw.appendChild(pEl); [...rest.children].forEach(c => pw.appendChild(c)); rest.remove();
+
+  // skill cloud: words placed along a spiral, skipping spots that would overlap
+  const skills = ["Robotics","IIoT","Cyber-Physical","Automation","Python","Predictive Models","5G","M2M","Arena","PTC Creo","Industry 4.0","Root-Cause","DB2","COBOL","AWS","Data Analytics","Fault Tolerance","R","SQL","Microcontrollers","REST","z/OS","Digital Production","CPS Security"];
+  const cloud = document.getElementById("cloud");
+  const cols = ["#08fdd8","#ffb000","#ffffff","#8d8d8d"];
+  const words = skills.map((s, i) => {
+    const el = document.createElement("span");
+    el.textContent = s;
+    el.style.fontSize = (14 + (i < 6 ? 14 : i < 12 ? 6 : 0)) + "px";
+    el.style.color = cols[i % cols.length];
+    el.style.opacity = i < 12 ? 1 : .7;
+    cloud.appendChild(el);
+    return el;
+  });
+  const baseSize = words.map(el => parseFloat(el.style.fontSize));
+  function layoutCloud(){
+    if (matchMedia("(max-width:860px)").matches) { words.forEach(el => el.style.visibility = "visible"); return; }  // phones: wrapped list (CSS)
+    for (let scale = 1; scale >= 0.5; scale -= 0.06) {      // shrink until every word fits
+      words.forEach((el, i) => el.style.fontSize = (baseSize[i] * scale).toFixed(1) + "px");
+      if (placeCloud()) return;
+    }
+  }
+  function placeCloud(){
+    const W = cloud.clientWidth, H = cloud.clientHeight, placed = [], pad = 6;
+    let ok = true;
+    words.forEach(el => {
+      const w = el.offsetWidth, h = el.offsetHeight;
+      for (let t = 0; t < 2500; t++) {
+        const a = t * 0.35, r = 2.2 * a;
+        const x = W/2 + r * Math.cos(a) * 1.25 - w/2, y = H/2 + r * Math.sin(a) * 0.8 - h/2;
+        if (x < 0 || y < 0 || x + w > W || y + h > H) continue;
+        if (placed.some(p => x < p.x + p.w + pad && x + w + pad > p.x && y < p.y + p.h && y + h > p.y)) continue;
+        placed.push({x, y, w, h}); el.style.left = x + "px"; el.style.top = y + "px"; el.style.visibility = "visible";
+        return;
+      }
+      el.style.visibility = "hidden"; ok = false;            // no room at this size
+    });
+    return ok;
+  }
+  let cloudTimer;
+  addEventListener("resize", () => { clearTimeout(cloudTimer); cloudTimer = setTimeout(layoutCloud, 150); });
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(layoutCloud);
+  layoutCloud();
+
+  // hero canvas: shooting stars with faint twinkling background stars
+  const cv = document.getElementById("sky"), ctx = cv.getContext("2d");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const hex = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim().replace("#","");
+  const RGB = [0,2,4].map(i => parseInt(hex.substr(i,2),16)).join(",");
+  const dpr = devicePixelRatio || 1;
+  let W, H, dots = [], shots = [], next = 600, last = performance.now();
+  let lastW = 0, running = false, visible = true;
+  function size(){
+    if (cv.offsetWidth === lastW && dots.length) { H = cv.height = cv.offsetHeight * dpr; return; }
+    lastW = cv.offsetWidth;
+    W = cv.width = cv.offsetWidth * dpr; H = cv.height = cv.offsetHeight * dpr;
+    dots = Array.from({length: 70}, () => ({ x: Math.random()*W, y: Math.random()*H*0.85, r: (Math.random()*1.1+0.3)*dpr, p: Math.random()*6.28, s: 0.6+Math.random()*1.4 }));
+  }
+  size(); addEventListener("resize", size);
+  function spawn(){
+    const ang = (118 + Math.random()*14) * Math.PI/180;          // falling down-left
+    const speed = (0.9 + Math.random()*0.7) * dpr;               // px per ms
+    shots.push({ x: W*(0.45 + Math.random()*0.55), y: -20*dpr + Math.random()*H*0.25,
+                 vx: Math.cos(ang)*speed, vy: Math.sin(ang)*speed,
+                 len: (140 + Math.random()*140)*dpr, life: 0, max: 900 + Math.random()*700 });
+  }
+  function frame(now){
+    const dt = Math.min(now - last, 50); last = now;
+    ctx.clearRect(0,0,W,H);
+    for (const d of dots) {
+      d.p += dt*0.001*d.s;
+      ctx.fillStyle = `rgba(255,255,255,${0.12 + 0.18*(Math.sin(d.p)+1)/2})`;
+      ctx.beginPath(); ctx.arc(d.x, d.y, d.r, 0, 6.283); ctx.fill();
+    }
+    next -= dt;
+    if (next <= 0) { spawn(); if (Math.random() < 0.25) spawn(); next = 1800 + Math.random()*3200; }
+    shots = shots.filter(s => s.life < s.max);
+    for (const s of shots) {
+      s.life += dt; s.x += s.vx*dt; s.y += s.vy*dt;
+      const t = s.life / s.max, fade = t < 0.15 ? t/0.15 : 1 - Math.pow((t-0.15)/0.85, 2);
+      const sp = Math.hypot(s.vx, s.vy), tx = s.x - s.vx/sp*s.len, ty = s.y - s.vy/sp*s.len;
+      const g = ctx.createLinearGradient(tx, ty, s.x, s.y);
+      g.addColorStop(0, `rgba(${RGB},0)`); g.addColorStop(0.75, `rgba(${RGB},${0.55*fade})`); g.addColorStop(1, `rgba(255,255,255,${0.95*fade})`);
+      ctx.strokeStyle = g; ctx.lineWidth = 2*dpr; ctx.lineCap = "round";
+      ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(s.x, s.y); ctx.stroke();
+      const glow = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, 9*dpr);
+      glow.addColorStop(0, `rgba(255,255,255,${0.9*fade})`); glow.addColorStop(0.4, `rgba(${RGB},${0.5*fade})`); glow.addColorStop(1, `rgba(${RGB},0)`);
+      ctx.fillStyle = glow; ctx.beginPath(); ctx.arc(s.x, s.y, 9*dpr, 0, 6.283); ctx.fill();
+    }
+    if (!reduce && visible) requestAnimationFrame(frame); else running = false;
+  }
+  function start(){ if (!running && !reduce) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
+  if (reduce) { frame(performance.now()); } else {
+    spawn(); start();
+    new IntersectionObserver(es => { visible = es[0].isIntersecting; if (visible) start(); }).observe(cv);
+  }
+
+  // reveal + active menu
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold:.15 });
+  document.querySelectorAll(".reveal").forEach(n => io.observe(n));
+  const links = document.querySelectorAll(".menu a");
+  const so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin:"-45% 0px -50% 0px" });
+  document.querySelectorAll("section, header").forEach(s => so.observe(s));
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
